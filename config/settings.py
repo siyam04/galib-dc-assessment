@@ -173,3 +173,15 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 # Staticfiles config
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Swagger config
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': 'JWT Authorization header using the Bearer scheme. Example: "Bearer {token}"',
+        }
+    }
+}
