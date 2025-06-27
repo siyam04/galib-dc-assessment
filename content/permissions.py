@@ -2,9 +2,9 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 
 # RBAC:
-# Public: Anyone (even not logged in) can read public data.
-# Authenticated: Logged-in users can create and manage their own content.
-# Admin: Only admins can access certain endpoints (like user list, analytics).
+# Public: Anyone (even not logged in) can read public data and register.
+# Authenticated: Logged-in users can create and manage their own content and use AI.
+# Admin: Only admins can do everything and access certain endpoints (like user list, analytics).
 
 
 class IsOwnerOrReadOnly(BasePermission):
