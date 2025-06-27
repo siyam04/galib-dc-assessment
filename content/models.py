@@ -14,7 +14,7 @@ class Content(models.Model):
     title = models.CharField(max_length=255)
     body = models.TextField()
     category = models.ForeignKey(Category, related_name='contents', on_delete=models.SET_NULL, null=True)
-    metadata = models.JSONField(blank=True, null=True)
+    metadata = models.JSONField(blank=True, null=True)  # Flexible JSON-serializable data: tags, AI analysis results, custom attributes, etc.
     owner = models.ForeignKey(get_user_model(), related_name='contents', on_delete=models.CASCADE)
     is_public = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
