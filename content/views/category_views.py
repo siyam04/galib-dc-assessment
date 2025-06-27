@@ -1,5 +1,4 @@
 from rest_framework import viewsets, permissions, filters
-
 from content.models import Category
 from content.serializers import CategorySerializer
 
