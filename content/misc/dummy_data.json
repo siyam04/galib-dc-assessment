@@ -1,0 +1,122 @@
+[
+  {
+    "model": "content.category",
+    "pk": 1,
+    "fields": {
+      "name": "AI",
+      "description": "Artificial Intelligence"
+    }
+  },
+  {
+    "model": "content.category",
+    "pk": 2,
+    "fields": {
+      "name": "Tech",
+      "description": "Technology News"
+    }
+  },
+  {
+    "model": "content.category",
+    "pk": 3,
+    "fields": {
+      "name": "Science",
+      "description": "Science and Research"
+    }
+  },
+  {
+    "model": "content.category",
+    "pk": 4,
+    "fields": {
+      "name": "Health",
+      "description": "Health and Wellness"
+    }
+  },
+  {
+    "model": "content.category",
+    "pk": 5,
+    "fields": {
+      "name": "Business",
+      "description": "Business and Finance"
+    }
+  },
+  {
+    "model": "content.content",
+    "pk": 1,
+    "fields": {
+      "title": "AI Revolution",
+      "body": "AI is transforming industries.",
+      "category": 1,
+      "metadata": {
+        "source": "example.com"
+      },
+      "owner": 1,
+      "is_public": true,
+      "created_at": "2024-06-27T00:00:00Z",
+      "updated_at": "2024-06-27T00:00:00Z"
+    }
+  },
+  {
+    "model": "content.content",
+    "pk": 2,
+    "fields": {
+      "title": "Tech Trends 2024",
+      "body": "Latest trends in technology.",
+      "category": 2,
+      "metadata": {
+        "source": "technews.com"
+      },
+      "owner": 1,
+      "is_public": true,
+      "created_at": "2024-06-27T00:00:00Z",
+      "updated_at": "2024-06-27T00:00:00Z"
+    }
+  },
+  {
+    "model": "content.content",
+    "pk": 3,
+    "fields": {
+      "title": "Space Exploration",
+      "body": "New frontiers in space.",
+      "category": 3,
+      "metadata": {
+        "source": "nasa.gov"
+      },
+      "owner": 1,
+      "is_public": false,
+      "created_at": "2024-06-27T00:00:00Z",
+      "updated_at": "2024-06-27T00:00:00Z"
+    }
+  },
+  {
+    "model": "content.content",
+    "pk": 4,
+    "fields": {
+      "title": "Healthy Living",
+      "body": "Tips for a healthy lifestyle.",
+      "category": 4,
+      "metadata": {
+        "source": "health.com"
+      },
+      "owner": 1,
+      "is_public": true,
+      "created_at": "2024-06-27T00:00:00Z",
+      "updated_at": "2024-06-27T00:00:00Z"
+    }
+  },
+  {
+    "model": "content.content",
+    "pk": 5,
+    "fields": {
+      "title": "Market Analysis",
+      "body": "Business market analysis for Q1.",
+      "category": 5,
+      "metadata": {
+        "source": "business.com"
+      },
+      "owner": 1,
+      "is_public": false,
+      "created_at": "2024-06-27T00:00:00Z",
+      "updated_at": "2024-06-27T00:00:00Z"
+    }
+  }
+]
