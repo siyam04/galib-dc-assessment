@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from content.permissions import IsAdminUser
 from content.models import Content, Category
-from content.serializers import UserRegistrationSerializer
+from content.serializers.user_serializers import UserRegistrationSerializer
 
 
 class UserRegistrationView(generics.CreateAPIView):

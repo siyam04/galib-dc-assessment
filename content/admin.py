@@ -11,9 +11,23 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Content)
 class ContentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'body', 'category', 'metadata', 'owner', 'is_public', 'created_at', 'updated_at')
+    list_display = (
+        'id', 'title', 'body', 'category', 'metadata', 'owner', 'is_public', 'created_at', 'updated_at',
+        'summary', 'sentiment', 'topics', 'recommendations'
+    )
+    readonly_fields = ('summary', 'sentiment', 'topics', 'recommendations', 'created_at', 'updated_at')
     list_display_links = ('title',)
     list_editable = ('is_public',)
-    list_filter = ('is_public', 'category')
-    search_fields = ('title', 'body')
-    raw_id_fields = ('owner',)
+    list_filter = ('is_public', 'category', 'sentiment')
+    search_fields = ('title', 'body', 'summary', 'sentiment', 'topics', 'recommendations')
+    fieldsets = (
+        (None, {
+            'fields': ('title', 'body', 'category', 'owner', 'is_public', 'metadata')
+        }),
+        ('AI Analysis', {
+            'fields': ('summary', 'sentiment', 'topics', 'recommendations')
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at')
+        }),
+    )

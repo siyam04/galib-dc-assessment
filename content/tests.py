@@ -18,7 +18,16 @@ class ContentModelTest(TestCase):
         self.category = Category.objects.create(name='AI', description='AI')
 
     def test_content_creation(self):
-        content = Content.objects.create(title='Test', body='Body', category=self.category, owner=self.user)
+        content = Content.objects.create(
+            title='Test',
+            body='Body',
+            category=self.category,
+            owner=self.user,
+            summary='',
+            sentiment='',
+            topics=[],
+            recommendations=''
+        )
         self.assertEqual(content.title, 'Test')
         self.assertEqual(content.owner, self.user)
         self.assertEqual(content.category, self.category)

@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions, filters
 from content.models import Category
-from content.serializers import CategorySerializer
+from content.serializers.category_serializers import CategorySerializer
 
 
 class CategoryViewSet(viewsets.ModelViewSet):

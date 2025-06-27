@@ -19,6 +19,11 @@ class Content(models.Model):
     is_public = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    # Analyze automatically by Ai
+    summary = models.TextField(blank=True, null=True)
+    sentiment = models.CharField(max_length=128, blank=True, null=True)
+    topics = models.JSONField(blank=True, null=True)
+    recommendations = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.title
