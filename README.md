@@ -145,6 +145,9 @@ GROQ_API_KEY=your-groq-api-key
 * Django Admin Panel
 ![img_Dj_Admin.png](content/misc/img_Dj_Admin.png)
 
+* Render Deployment
+![img_Render_deploy.png](content/misc/img_Render_deploy.png)
+
 ---
 
 ## 🧠 AI Integration: GROQ
@@ -264,7 +267,8 @@ GROQ_API_KEY=your-groq-api-key
 
 ---
 
-[//]: # (## 🚀 Live Demo)
+## 🚀 Render Live Demo (Deployment in progress...)
 
-[//]: # ()
-[//]: # ([https://your-live-app-url.com]&#40;https://your-live-app-url.com&#41;)
+[https://dc-codebase.onrender.com/](https://dc-codebase.onrender.com/)
+
+---
